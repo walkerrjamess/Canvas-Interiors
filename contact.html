@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Canvas Interiors</title>
+    <meta name="description" content="Get in touch with Canvas Interiors for your luxury interior design project. Based in London, serving residential and commercial clients worldwide.">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">Canvas Interiors</a>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="visualisations.html">Visualisations</a></li>
+                        <li><a href="bespoke-furniture.html">Bespoke Furniture</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <span class="theme-icon">☀️</span>
+                    </button>
+                    <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Contact Canvas Interiors</h1>
+                <p>Begin your design journey with London's premier interior studio</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>We'd love to discuss your project and explore how Canvas Interiors can transform your space. Whether you're planning a complete renovation or looking for bespoke furniture, our team is here to guide you through every step of the design process.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>Email</h3>
+                                <p><a href="mailto:hello@canvasinteriors.com">hello@canvasinteriors.com</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+442071234567">+44 20 7123 4567</a></p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>Studio Location</h3>
+                                <p>Central London<br>By appointment only</p>
+                            </div>
+                        </div>
+
+                        <div class="studio-info">
+                            <h3>Studio Hours</h3>
+                            <div class="hours-grid">
+                                <div class="hours-item">
+                                    <span class="day">Monday - Friday</span>
+                                    <span class="time">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Saturday</span>
+                                    <span class="time">10:00 AM - 4:00 PM</span>
+                                </div>
+                                <div class="hours-item">
+                                    <span class="day">Sunday</span>
+                                    <span class="time">By appointment</span>
+                                </div>
+                            </div>
+                            <p class="appointment-note">All consultations are by appointment only. Please contact us to schedule your visit to our London studio.</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-section">
+                        <h2>Project Enquiry</h2>
+                        <p class="form-note"><strong>Note:</strong> This is a static contact form. For immediate assistance, please email us directly at <a href="mailto:hello@canvasinteriors.com">hello@canvasinteriors.com</a></p>
+                        
+                        <form class="contact-form" id="contactForm" action="mailto:hello@canvasinteriors.com" method="post" enctype="text/plain">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                    <span class="error-message" id="firstNameError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                    <span class="error-message" id="lastNameError"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="error-message" id="emailError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="projectType">Project Type *</label>
+                                    <select id="projectType" name="projectType" required>
+                                        <option value="">Select project type</option>
+                                        <option value="residential">Residential</option>
+                                        <option value="commercial">Commercial</option>
+                                        <option value="bespoke-furniture">Bespoke Furniture</option>
+                                        <option value="visualisation">Visualisation</option>
+                                    </select>
+                                    <span class="error-message" id="projectTypeError"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="location">Project Location</label>
+                                    <input type="text" id="location" name="location" placeholder="e.g., Kensington, London">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget">Estimated Budget Range</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="50k-100k">£50,000 - £100,000</option>
+                                    <option value="100k-250k">£100,000 - £250,000</option>
+                                    <option value="250k-500k">£250,000 - £500,000</option>
+                                    <option value="500k+">£500,000+</option>
+                                    <option value="prefer-not-to-say">Prefer not to say</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Project Description *</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Please describe your project, including space details, design preferences, and any specific requirements..." required></textarea>
+                                <span class="error-message" id="messageError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectBrief">Upload Project Brief (Optional)</label>
+                                <input type="file" id="projectBrief" name="projectBrief" accept=".pdf,.doc,.docx,.zip">
+                                <small>Accepted formats: PDF, Word documents, ZIP files (max 10MB)</small>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span class="checkbox-mark"></span>
+                                    Subscribe to our newsletter for design inspiration and project updates
+                                </label>
+                            </div>
+
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="privacy" name="privacy" required>
+                                    <span class="checkbox-mark"></span>
+                                    I agree to the privacy policy and consent to Canvas Interiors storing my information *
+                                </label>
+                                <span class="error-message" id="privacyError"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+                            
+                            <div class="form-status" id="formStatus" role="alert" aria-live="polite"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location-map">
+            <div class="container">
+                <h2>Studio Location</h2>
+                <div class="map-container">
+                    <div class="map-mock">
+                        <div class="map-overlay">
+                            <div class="map-marker">
+                                <span>📍</span>
+                            </div>
+                            <div class="map-info">
+                                <h3>Canvas Interiors Studio</h3>
+                                <p>Central London</p>
+                                <p>Private consultations by appointment</p>
+                            </div>
+                        </div>
+                        <div class="map-grid">
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-details">
+                    <div class="detail-item">
+                        <h4>Transport Links</h4>
+                        <p>Easily accessible via Underground, with multiple stations within walking distance. Complimentary parking available for client appointments.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>Appointment Process</h4>
+                        <p>Schedule your consultation in advance to ensure dedicated time with our design team. Virtual consultations also available via video call.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h4>What to Expect</h4>
+                        <p>Our studio showcases material samples, design references, and project portfolios. Bring any inspiration images or existing plans to your consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="consultation-process">
+            <div class="container">
+                <h2>Consultation Process</h2>
+                <div class="process-overview">
+                    <div class="process-item">
+                        <div class="process-number">01</div>
+                        <div class="process-content">
+                            <h3>Initial Contact</h3>
+                            <p>Submit your enquiry via the form above or contact us directly. We'll respond within 24 hours to schedule your consultation.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-number">02</div>
+                        <div class="process-content">
+                            <h3>Design Consultation</h3>
+                            <p>Meet with our design team to discuss your vision, requirements, and timeline. This initial consultation helps us understand your project scope.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-number">03</div>
+                        <div class="process-content">
+                            <h3>Proposal & Planning</h3>
+                            <p>We'll prepare a detailed proposal outlining our design approach, timeline, and investment required for your project.</p>
+                        </div>
+                    </div>
+                    <div class="process-item">
+                        <div class="process-number">04</div>
+                        <div class="process-content">
+                            <h3>Project Commencement</h3>
+                            <p>Once approved, we begin the design process with detailed space planning, material selection, and visualisation development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Canvas Interiors</h3>
+                    <p>London's premier interior design studio</p>
+                    <div class="contact-info">
+                        <p><a href="mailto:hello@canvasinteriors.com">hello@canvasinteriors.com</a></p>
+                        <p>London, UK</p>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="visualisations.html">Visualisations</a></li>
+                        <li><a href="bespoke-furniture.html">Bespoke Furniture</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Canvas Interiors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
